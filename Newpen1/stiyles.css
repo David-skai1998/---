@@ -1,0 +1,152 @@
+/* Основные стили для сайта магазина */
+body {
+    color: rgb(6, 156, 250);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 19px;
+    background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1614391481_7-p-temnii-igrovoi-fon-8.jpg)
+}
+
+header {
+    background-color: #646464;
+    color: #fff;
+    padding: 10px 0;
+    border: 1px yellow;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 3px solid #0792cd;
+    
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 2px 3px 5px 4px rgb(86, 109, 239);
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+   
+    
+}
+
+.buy-button{
+    height: 30px;
+    width: 100px;
+    border-radius: 6px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: #272727;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.cart {
+    background-color: #6b6969;
+    border: 1px solid #d0f30c;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    color:rgb(92, 174, 241);
+   
+}
+
+
+.cart h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.cart-total {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.checkout-button {
+    background-color: #007bff;
+    color: white;
+    border: 1px;
+    border-color: #0000ff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+a:hover {
+    color: #eeff00; /* Новый цвет при наведении */
+     /* Новый цвет текста при наведении */
+
+}
+
+button:hover{
+    color:#eeff00;
+    translate: 2ms;
+}
+
+
+
+@keyframes highlight {
+    0% { background-color: #6b6969; }
+    50% { background-color: #d0f30c; }
+    100% { background-color: #6b6969; }
+}
+
+.flash {
+    animation: highlight 2s ease-in-out;
+}
+
+
+
